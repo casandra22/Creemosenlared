@@ -1,0 +1,36 @@
+/* por tag */
+h2 {color: red; font-size: 30pt; }
+p { color: rgba(106, 100, 158, 0.808); font-family: monospace;}
+
+/* por id */
+#titulo-1 {font-style: italic;}
+#titulo-2 {font-weight: 900;}
+
+/* por clase */
+.ultimo {color: seagreen}
+
+/* combinado */
+p.ultimo{color:salmon;}
+.par.ultimo{font-weight: bold;}
+
+/* alternativas (separados por coma)*/
+h2, h3 {color: rosybrown; font-size: 36;}
+
+/*descendiente directo (propiedades aplican al selector de la derecha, que es desc. directo)*/
+.base > h2 {text-align: right;}
+.base > p.par > span {text-decoration: underline;}
+
+/* descendiente indirecto (no importa el nivel)*/
+.base .ejemplo {font-family: sans-serif;}
+
+/* FORMATO GENERAL: <selector> { <llave/propiedad>: <valor>; ...} */
+
+.base {
+  border: 2px dashed burlywood;
+  padding: 1em 2em 3em 4em;
+  margin: 4em 3em 2em 1em;
+  margin-top: 4em;
+  margin-right: 3em;
+  padding-bottom: 3em;
+  padding-left: 4em;
+}
